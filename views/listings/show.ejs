@@ -11,11 +11,9 @@
                 <div class="card show-card listing-card">
                     <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listing_image">
                     <div class="card-body">
-                        <% if(listing.owner){ %>
                         <p class="card-text">Owned by <i>
                                 <%= listing.owner.username %>
                             </i></p>
-                            <% } %>
                         <p class="card-text">
                             <%= listing.description %>
                         </p>
@@ -41,8 +39,8 @@
                     </div>
                     <% } %>
 
-                       
-                        <div class="mb-3"> 
+
+                        <div class="mb-3">
 
                             <% if(currUser) { %>
                                 <hr>
